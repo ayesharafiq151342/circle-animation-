@@ -1,0 +1,95 @@
+.container{
+    position:absolute;
+
+  left: 40%;
+  top: 40%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding: 30px 60px;
+  box-shadow: 0px 25px 50px rgb(0, 0, 0.5);
+  overflow: hidden;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container:befor{
+    content: "";
+    position: absolute;
+    left: 2px;
+    top:2px;
+    width: 50%;
+    background-color: rgb(255,255, 255,0.5);
+
+}
+.container span:nth-child(1){
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0px;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to right,#0c002b,#1779ff);
+    animation: anim1 2s linear infinite ;
+}
+@keyframes  anim1{
+    0%{
+transform: translatex(-100%);
+    }
+    100%{
+        transform: translatex(100%);
+    }
+}
+.container span:nth-child(2){
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: anim2 2s linear infinite ;
+}
+@keyframes  anim2{
+    0%{
+transform: translatey(-100%);
+    }
+    100%{
+        transform: translatey(100%);
+    }}
+
+
+
+.container span:nth-child(3){
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0px;
+    bottom: 0px;
+     background: linear-gradient(to left,#0c002b,#1779ff);
+     animation: anim3 2s linear infinite ;
+    }
+    @keyframes  anim3{
+        0%{
+    transform: translatex(100%);
+        }
+        100%{
+            transform: translatex(-100%);
+        }}
+.container span:nth-child(4){
+    position: absolute;
+    width: 2px;
+    height: 100%;
+   bottom:0px ;
+     left: 0px;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: anim4 2s linear infinite ;
+}
+@keyframes  anim4{
+    0%{
+transform: translatey(100%);
+    }
+    100%{
+        transform: translatey(-100%);
+    }}
+.container:hover{
+    background-color:rgb(82, 19, 67);
+  box-shadow: 0px 25px 50px rgb(82, 19, 67);;
+
+}
